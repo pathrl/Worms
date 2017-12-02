@@ -8,7 +8,7 @@ self.onmessage = function(msg) {
 
 function update() {
   // move worm
-  wormObject.rotZ += Math.random()* 1;
+  wormObject.rotZ += (Math.random() - 0.5) * 0.7;
   // wormObject.velocity += Math.round((Math.random() - 0.5) * 4);
   wormObject.posX += Math.cos(wormObject.rotZ) * wormObject.velocity;
   wormObject.posY += Math.sin(wormObject.rotZ) * wormObject.velocity;
